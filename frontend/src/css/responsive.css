@@ -1,0 +1,7 @@
+@media (max-width: 900px) {
+  .search-bar { flex-wrap: wrap; }
+  .search-bar .search-control { flex: 1 1 220px; }
+}
+@media (max-width: 600px) {
+  .container, .parking-grid, .parking-list-grid, .dashboard-grid, .owner-grid { width: min(100% - 28px, 1120px); }
+}

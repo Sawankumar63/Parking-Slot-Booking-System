@@ -1,0 +1,6 @@
+.about-layout { display:grid; grid-template-columns:1fr 1fr; gap:48px; align-items:center; margin-top:56px; }
+.about-layout img { width:100%; border-radius:18px; box-shadow:0 12px 30px rgba(15,23,42,.12); transition:.25s; }
+.about-layout img:hover { transform:scale(1.02); }
+.about-layout h2 { font-size:38px; margin:0; }
+.about-layout p { color:#64748b; line-height:1.8; margin:22px 0 28px; }
+@media(max-width:800px){.about-layout{grid-template-columns:1fr}.about-layout h2{font-size:30px}}

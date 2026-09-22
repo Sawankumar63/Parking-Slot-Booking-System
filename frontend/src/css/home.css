@@ -1,0 +1,7 @@
+.welcome { text-align: center; padding-top: 24px; }
+.welcome h2 { margin: 0; font-size: 25px; }
+.welcome p { color: #64748b; margin: 6px 0 0; }
+.home-error { text-align: center; color: #dc2626; margin-top: 16px; }
+.parking-section { padding: 20px 0 80px; }
+.parking-section-title { text-align: center; font-size: clamp(32px, 4vw, 48px); margin: 60px 0 40px; }
+.parking-grid { width: min(1120px, calc(100% - 48px)); margin: auto; display: flex; justify-content: center; flex-wrap: wrap; gap: 32px; }

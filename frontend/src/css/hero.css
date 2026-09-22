@@ -1,0 +1,9 @@
+.hero { width: min(1200px, calc(100% - 48px)); min-height: 620px; margin: auto; display: flex; align-items: center; justify-content: space-between; gap: 50px; padding: 50px 0; }
+.hero-content { max-width: 600px; }
+.hero h1 { font-size: clamp(40px, 6vw, 68px); line-height: 1.05; margin: 0; }
+.hero p { margin: 24px 0 0; color: #64748b; font-size: 19px; line-height: 1.7; }
+.hero-actions { display: flex; gap: 16px; margin-top: 32px; }
+.hero-image-wrap { width: 48%; display: flex; justify-content: center; }
+.hero-image { width: 100%; max-width: 540px; border-radius: 20px; object-fit: cover; box-shadow: 0 20px 45px rgba(15,23,42,.14); }
+@media (max-width: 800px) { .hero { flex-direction: column; min-height: auto; text-align: center; padding: 60px 0; } .hero-actions { justify-content: center; } .hero-image-wrap { width: 100%; } }
+@media (max-width: 480px) { .hero-actions { flex-direction: column; } }

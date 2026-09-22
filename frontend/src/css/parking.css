@@ -1,0 +1,4 @@
+.parking-page { padding: 80px 0; }
+.parking-count { text-align: center; color: #64748b; margin-top: 32px; }
+.parking-list-grid { width: min(1120px, calc(100% - 48px)); margin: 48px auto 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 32px; }
+.parking-details { width: min(900px, calc(100% - 48px)); margin: 40px auto; }

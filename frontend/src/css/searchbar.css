@@ -1,0 +1,4 @@
+.search-bar { width: min(1100px, calc(100% - 48px)); margin: -35px auto 0; position: relative; z-index: 5; background: #fff; box-shadow: 0 12px 35px rgba(15,23,42,.12); border-radius: 16px; padding: 20px; display: flex; gap: 12px; align-items: center; }
+.search-control { min-width: 0; flex: 1; border: 1px solid #cbd5e1; border-radius: 10px; padding: 12px 14px; outline: none; background: #fff; }
+.search-control:focus { border-color: #facc15; box-shadow: 0 0 0 3px rgba(250,204,21,.18); }
+@media (max-width: 900px) { .search-bar { margin-top: 0; } }

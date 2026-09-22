@@ -1,0 +1,6 @@
+.booking-page { padding: 80px 0; }
+.booking-container { width: min(720px, calc(100% - 48px)); margin: auto; }
+.booking-card { margin-top: 48px; }
+.booking-title { font-size: clamp(36px, 5vw, 50px); text-align: center; margin: 0; font-weight: 800; }
+.booking-subtitle { text-align: center; color: #64748b; margin: 16px 0 0; }
+.booking-heading { font-size: 26px; margin: 0 0 24px; }

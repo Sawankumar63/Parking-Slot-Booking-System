@@ -1,0 +1,4 @@
+.dashboard-page { padding: 60px 0; }
+.dashboard-grid { width: min(1120px, calc(100% - 48px)); margin: 32px auto; display: grid; grid-template-columns: repeat(3,1fr); gap: 20px; }
+.dashboard-card { background: #fff; border-radius: 16px; padding: 24px; box-shadow: 0 8px 25px rgba(15,23,42,.08); }
+@media (max-width: 800px) { .dashboard-grid { grid-template-columns: 1fr; } }

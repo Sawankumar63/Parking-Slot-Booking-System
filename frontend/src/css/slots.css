@@ -1,0 +1,5 @@
+.slot-grid { display: grid; grid-template-columns: repeat(auto-fill,minmax(110px,1fr)); gap: 14px; }
+.slot { border: 2px solid #cbd5e1; border-radius: 12px; padding: 16px 8px; background: #fff; display: flex; flex-direction: column; gap: 6px; align-items: center; transition: .2s; }
+.slot small { color: #64748b; }
+.slot-available:hover, .slot-selected { border-color: #eab308; background: #fef9c3; }
+.slot-booked { background: #fee2e2; border-color: #fecaca; color: #991b1b; cursor: not-allowed; }

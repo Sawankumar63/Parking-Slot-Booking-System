@@ -1,0 +1,4 @@
+.owner-page { padding: 60px 0; }
+.owner-grid { width: min(1120px, calc(100% - 48px)); margin: 32px auto; display: grid; grid-template-columns: repeat(2,1fr); gap: 24px; }
+.owner-card { background: #fff; border-radius: 16px; padding: 24px; box-shadow: 0 8px 25px rgba(15,23,42,.08); }
+@media (max-width: 700px) { .owner-grid { grid-template-columns: 1fr; } }
