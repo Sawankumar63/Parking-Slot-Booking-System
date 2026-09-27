@@ -1,5 +1,10 @@
 import React, { createContext, useEffect, useState } from "react";
-import { getProfile, loginUser, logoutUser, registerUser } from "../services/authService";
+import {
+  getProfile,
+  loginUser,
+  logoutUser,
+  registerUser,
+} from "../services/authService";
 
 export const AuthContext = createContext(null);
 
@@ -8,11 +13,17 @@ export const AuthProvider = ({ children }) => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    if (!localStorage.getItem("token")) { setLoading(false); return; }
-    getProfile().then(data => setUser(data.user)).catch(() => logoutUser()).finally(() => setLoading(false));
+    if (!localStorage.getItem("token")) {
+      setLoading(false);
+      return;
+    }
+    getProfile()
+      .then((data) => setUser(data.user))
+      .catch(() => logoutUser())
+      .finally(() => setLoading(false));
   }, []);
 
-  const login = async credentials => {
+  const login = async (credentials) => {
     const data = await loginUser(credentials);
     localStorage.setItem("token", data.token);
     const profile = await getProfile();
@@ -20,8 +31,24 @@ export const AuthProvider = ({ children }) => {
     return data;
   };
 
-  const register = async data => registerUser(data);
-  const logout = () => { logoutUser(); setUser(null); };
+  const register = async (data) => registerUser(data);
+  const logout = () => {
+    logoutUser();
+    setUser(null);
+  };
 
-  return <AuthContext.Provider value={{ user, loading, login, register, logout, isAuthenticated: Boolean(user) }}>{children}</AuthContext.Provider>;
+  return (
+    <AuthContext.Provider
+      value={{
+        user,
+        loading,
+        login,
+        register,
+        logout,
+        isAuthenticated: Boolean(user),
+      }}
+    >
+      {children}
+    </AuthContext.Provider>
+  );
 };
